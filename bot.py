@@ -102,7 +102,7 @@ def job_send_today():
     msg = compose_message(sched, today)
     send_telegram_message(msg)
 
-if name == "main":
+if __name__ == "__main__":
     # Preview in console
     today = get_today_name()
     sched = load_schedule(SCHEDULE_FILE)
