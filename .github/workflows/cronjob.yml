@@ -1,0 +1,32 @@
+name: SOMC 63 Routine Bot
+
+on:
+  schedule:
+    # Runs every day at 07:00 AM Dhaka time
+    - cron: "0 1 * * *"   # 01:00 UTC = 07:00 Asia/Dhaka
+  workflow_dispatch:       # allow manual run from GitHub Actions tab
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests apscheduler
+
+      - name: Run bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TIMEZONE: "Asia/Dhaka"
+        run: |
+          python bot.py
