@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests apscheduler
+          pip install requests apscheduler python-dotenv
 
       - name: Run bot
         env:
