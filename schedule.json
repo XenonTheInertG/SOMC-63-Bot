@@ -1,0 +1,549 @@
+{
+  "Saturday": [
+    {
+      "time": "08:00-09:00",
+      "activities": [
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-?"
+        }
+      ]
+    },
+    {
+      "time": "09:00-10:00",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-2"
+        }
+      ]
+    },
+    {
+      "time": "10:30-12:30",
+      "activities": [
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "A"
+          ],
+          "location": "Tutorial room / Biochem area"
+        },
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "B"
+          ],
+          "location": "Physio tutorial room"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Practical",
+          "batches": [
+            "C"
+          ],
+          "location": "Biochem practical lab"
+        },
+        {
+          "subject": "Physiology",
+          "type": "Practical",
+          "batches": [
+            "D"
+          ],
+          "location": "Physio practical lab"
+        }
+      ]
+    },
+    {
+      "time": "12:30-14:30",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Dissection",
+          "batches": [
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Anatomy Dissection Hall"
+        },
+        {
+          "subject": "Histology",
+          "type": "Practical/Tutorial",
+          "batches": [
+            "A"
+          ],
+          "location": "Histology Lab"
+        }
+      ]
+    }
+  ],
+  "Sunday": [
+    {
+      "time": "08:00-09:00",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Demonstration",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Demo Hall / Lecture Gallery"
+        }
+      ]
+    },
+    {
+      "time": "09:00-10:00",
+      "activities": [
+        {
+          "subject": "Biochemistry",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-2"
+        }
+      ]
+    },
+    {
+      "time": "10:30-12:30",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "A"
+          ],
+          "location": "Physio tutorial room"
+        },
+        {
+          "subject": "Physiology",
+          "type": "Practical",
+          "batches": [
+            "C"
+          ],
+          "location": "Physio practical lab"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Practical",
+          "batches": [
+            "B"
+          ],
+          "location": "Biochem practical lab"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "D"
+          ],
+          "location": "Biochem tutorial room"
+        }
+      ]
+    },
+    {
+      "time": "12:30-14:30",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Dissection",
+          "batches": [
+            "A",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Anatomy Dissection Hall"
+        },
+        {
+          "subject": "Histology",
+          "type": "Practical/Tutorial",
+          "batches": [
+            "B"
+          ],
+          "location": "Histology Lab"
+        }
+      ]
+    }
+  ],
+  "Monday": [
+    {
+      "time": "08:00-09:00",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-2"
+        }
+      ]
+    },
+    {
+      "time": "09:00-10:00",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-1"
+        }
+      ]
+    },
+    {
+      "time": "10:30-12:30",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Dissection",
+          "batches": [
+            "A",
+            "B",
+            "D",
+            "E"
+          ],
+          "location": "Anatomy Dissection Hall"
+        },
+        {
+          "subject": "Histology",
+          "type": "Practical/Tutorial",
+          "batches": [
+            "C"
+          ],
+          "location": "Histology Lab"
+        }
+      ]
+    },
+    {
+      "time": "12:30-14:30",
+      "activities": [
+        {
+          "subject": "Biochemistry",
+          "type": "Practical",
+          "batches": [
+            "A"
+          ],
+          "location": "Biochem practical lab"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "C"
+          ],
+          "location": "Biochem tutorial room"
+        },
+        {
+          "subject": "Physiology",
+          "type": "Practical",
+          "batches": [
+            "B"
+          ],
+          "location": "Physio practical lab"
+        },
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "D"
+          ],
+          "location": "Physio tutorial room"
+        }
+      ]
+    }
+  ],
+  "Tuesday": [
+    {
+      "time": "08:00-09:00",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Demonstration",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Demo Hall / Lecture Gallery"
+        }
+      ]
+    },
+    {
+      "time": "09:00-10:00",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-1"
+        }
+      ]
+    },
+    {
+      "time": "10:30-12:30",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Dissection",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "E"
+          ],
+          "location": "Anatomy Dissection Hall"
+        },
+        {
+          "subject": "Histology",
+          "type": "Practical/Tutorial",
+          "batches": [
+            "D"
+          ],
+          "location": "Histology Lab"
+        }
+      ]
+    },
+    {
+      "time": "12:30-14:30",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Practical",
+          "batches": [
+            "A"
+          ],
+          "location": "Physio practical lab"
+        },
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "C"
+          ],
+          "location": "Physio tutorial room"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "B"
+          ],
+          "location": "Biochem tutorial room"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Practical",
+          "batches": [
+            "D"
+          ],
+          "location": "Biochem practical lab"
+        }
+      ]
+    }
+  ],
+  "Wednesday": [
+    {
+      "time": "08:00-09:00",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Physio tutorial room"
+        }
+      ]
+    },
+    {
+      "time": "09:00-10:00",
+      "activities": [
+        {
+          "subject": "Biochemistry",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-2"
+        }
+      ]
+    },
+    {
+      "time": "10:30-12:30",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "A",
+            "C"
+          ],
+          "location": "Physio tutorial room"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "B",
+            "D"
+          ],
+          "location": "Biochem tutorial room"
+        }
+      ]
+    },
+    {
+      "time": "12:30-14:30",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Dissection",
+          "batches": [
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Anatomy Dissection Hall"
+        },
+        {
+          "subject": "Histology",
+          "type": "Practical/Tutorial",
+          "batches": [
+            "A"
+          ],
+          "location": "Histology Lab"
+        }
+      ]
+    }
+  ],
+  "Thursday": [
+    {
+      "time": "08:00-09:00",
+      "activities": [
+        {
+          "subject": "Biochemistry",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-3"
+        }
+      ]
+    },
+    {
+      "time": "09:00-10:00",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Lecture",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Lecture Gallery-2"
+        }
+      ]
+    },
+    {
+      "time": "10:30-12:30",
+      "activities": [
+        {
+          "subject": "Anatomy",
+          "type": "Dissection",
+          "batches": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "location": "Anatomy Dissection Hall"
+        }
+      ]
+    },
+    {
+      "time": "12:30-14:30",
+      "activities": [
+        {
+          "subject": "Physiology",
+          "type": "Tutorial",
+          "batches": [
+            "B",
+            "D"
+          ],
+          "location": "Physio tutorial room"
+        },
+        {
+          "subject": "Biochemistry",
+          "type": "Tutorial",
+          "batches": [
+            "A",
+            "C"
+          ],
+          "location": "Biochem tutorial room"
+        }
+      ]
+    }
+  ]
+}
