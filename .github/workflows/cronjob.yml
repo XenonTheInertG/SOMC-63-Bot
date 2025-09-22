@@ -3,7 +3,7 @@ name: SOMC 63 Routine Bot
 on:
   schedule:
     # Runs every day at 07:00 AM Dhaka time
-    - cron: "23 17 * * *"   # 01:00 UTC = 07:00 Asia/Dhaka
+    - cron: "0 1 * * *"   # 01:00 UTC = 07:00 Asia/Dhaka
   workflow_dispatch:       # allow manual run from GitHub Actions tab
 
 jobs:
