@@ -2,14 +2,21 @@ name: SOMC 63 Routine Bot
 
 on:
   schedule:
-    # Runs every day at 07:00 AM Dhaka time
-    - cron: "0 1 * * *"   # 01:00 UTC = 07:00 Asia/Dhaka
-  workflow_dispatch:       # allow manual run from GitHub Actions tab
+    # Daily routine at 7:00 AM Dhaka time (1:00 UTC)
+    - cron: "0 1 * * *"
+    # Pre-class checks every 10 minutes during class hours (6 AM - 6 PM Dhaka = 0-12 UTC)
+    - cron: "*/10 0-12 * * 1-6"  # Mon-Sat, every 10 minutes during class hours
+  workflow_dispatch:             # allow manual run from GitHub Actions tab
+  push:
+    branches: [ main ]           # auto-deploy on push to main
 
 jobs:
-  run-bot:
+  # Daily routine job (runs at 7 AM Dhaka time)
+  daily-routine:
     runs-on: ubuntu-latest
-
+    if: github.event.schedule == '0 1 * * *' || github.event_name == 'workflow_dispatch'
+    timeout-minutes: 15
+    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -21,12 +28,41 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests apscheduler python-dotenv
+          pip install -r requirements.txt
 
-      - name: Run bot
+      - name: Send daily routine
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           TIMEZONE: "Asia/Dhaka"
         run: |
-          python bot.py
+          echo "🌅 Sending daily routine at 7:00 AM Dhaka time"
+          python bot.py --send-daily
+
+  # Pre-class notification checks (runs every 10 minutes during class hours)
+  preclass-check:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '*/10 0-12 * * 1-6' || github.event_name == 'workflow_dispatch'
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Check for pre-class notifications
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TIMEZONE: "Asia/Dhaka"
+        run: |
+          echo "🔔 Checking for pre-class notifications"
+          python bot.py --check-preclass
